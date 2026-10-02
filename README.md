@@ -1,16 +1,77 @@
-# React + Vite
+# Ganesh Chandra Rana — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my experience in RPA, automation, data science, and my transition toward AI Engineering.
 
-Currently, two official plugins are available:
+## 👨‍💻 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am an RPA Developer with 3+ years of experience building and supporting automation solutions using Automation Anywhere.
 
-## React Compiler
+My experience includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Robotic Process Automation
+- Web Automation
+- Excel Automation
+- Email Automation
+- SQL
+- Production Support
 
-## Expanding the ESLint configuration
+I am currently expanding my skills in Python, Data Science, Machine Learning, and Artificial Intelligence.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Python
+- SQL
+- Git
+- GitHub
+- Automation Anywhere
+
+## 🚀 Featured Project
+
+### Healthcare AI Claim Validation
+
+An AI-assisted healthcare claim validation solution built using Automation Anywhere, AI Skills, AI Agent, Excel/CSV, email automation, and human-in-the-loop processing.
+
+The project:
+
+- Classifies incoming claim emails
+- Extracts information from medical invoices
+- Validates patient and coverage information
+- Applies claim validation rules
+- Records claim decisions
+- Sends automated responses
+- Routes applicable cases for human review
+
+Project repository:
+
+https://github.com/RanaForge/healthcare-ai-claim-validation
+
+## 📊 Planned Data Science Project
+
+### Sales Data Analysis & Business Insights
+
+An exploratory data analysis project planned using:
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+The project will focus on sales trends, product performance, regional analysis, customer behavior, and business insights.
+
+## 🌐 Portfolio
+
+This repository contains the source code for my personal portfolio website.
+
+## 📫 Contact
+
+- Email: ganeshchandrarana501@gmail.com
+- GitHub: https://github.com/RanaForge
+
+---
+
+© 2026 Ganesh Chandra Rana
