@@ -1,0 +1,1344 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio {
+  min-height: 100vh;
+  background: #0b0f19;
+  color: white;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  border-bottom: 1px solid #202638;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #c5cad6;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.greeting {
+  font-size: 18px;
+  color: #8b93a7;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #b8c0d4;
+}
+
+h2 span {
+  color: #7c5cff;
+}
+
+.hero-description {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #9da5b8;
+  margin-top: 25px;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background: #7c5cff;
+  color: white;
+}
+
+.secondary-button {
+  border: 1px solid #3a4255;
+  color: white;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+/* =========================
+   Technology Stack
+========================= */
+
+.tech-stack {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.tech-stack span {
+  padding: 8px 14px;
+  border: 1px solid #2d3548;
+  border-radius: 20px;
+  color: #9da5b8;
+  font-size: 14px;
+}
+/* =================================
+   SKILLS SECTION
+================================= */
+
+/*
+  Adds spacing around the Skills section.
+*/
+.skills-section {
+  padding: 120px 8%;
+  border-top: 1px solid #202638;
+}
+
+
+/*
+  Creates a grid for the skill cards.
+
+  repeat(2, 1fr) means:
+  Create 2 equal-width columns.
+*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/*
+  Individual skill category card.
+*/
+.skill-card {
+  padding: 30px;
+
+  border: 1px solid #2d3548;
+  border-radius: 14px;
+
+  background: #101624;
+
+  transition: 0.3s;
+}
+
+
+/*
+  Small animation when the mouse
+  moves over a skill card.
+*/
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #7c5cff;
+}
+
+
+/*
+  Skill category title.
+*/
+.skill-card h3 {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+
+/*
+  Container for individual
+  skill tags.
+*/
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+/*
+  Individual skill tag.
+*/
+.skill-list span {
+  padding: 8px 13px;
+
+  border: 1px solid #343d52;
+  border-radius: 20px;
+
+  color: #aeb6c8;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   ABOUT SECTION - FINAL LAYOUT
+   ========================================= */
+
+/* Main About section */
+.about-section {
+  padding: 100px 8%;
+  border-top: 1px solid #202638;
+}
+
+
+/* About heading */
+.about-section .section-heading {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+
+/* Small "ABOUT ME" text */
+.about-section .section-heading p {
+  color: #7c5cff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+
+/* Main About heading */
+.about-section .section-heading h2 {
+  color: white;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+   ========================================= */
+
+.about-section .about-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  /* Creates two columns */
+  display: grid !important;
+
+  /* Left column is larger than right column */
+  grid-template-columns: 1.5fr 1fr !important;
+
+  gap: 60px;
+  align-items: start;
+}
+
+
+/* =========================================
+   LEFT SIDE TEXT
+   ========================================= */
+
+.about-section .about-text {
+  text-align: left;
+}
+
+
+.about-section .about-text p {
+  color: #aeb6c8;
+  font-size: 17px;
+  line-height: 1.8;
+
+  margin: 0 0 25px;
+}
+
+
+/* =========================================
+   RIGHT SIDE CARDS
+   ========================================= */
+
+.about-section .about-highlights {
+  display: grid !important;
+
+  grid-template-columns: 1fr !important;
+
+  gap: 16px;
+}
+
+
+/* Individual card */
+.about-section .highlight-card {
+  background: #101624;
+
+  border: 1px solid #2d3548;
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  text-align: left;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+
+/* Card hover effect */
+.about-section .highlight-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #7c5cff;
+}
+
+
+/* Card large text */
+.about-section .highlight-card h3 {
+  margin: 0 0 8px;
+
+  color: white;
+
+  font-size: 30px;
+}
+
+
+/* Card description */
+.about-section .highlight-card p {
+  margin: 0;
+
+  color: #8f98ab;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Change two columns into one column
+     on smaller screens */
+  .about-section .about-content {
+    grid-template-columns: 1fr !important;
+
+    gap: 40px;
+  }
+
+
+  /* Make heading smaller on mobile */
+  .about-section .section-heading h2 {
+    font-size: 30px;
+  }
+
+
+  /* Keep cards full width */
+  .about-section .about-highlights {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+/* =========================================
+   PROJECTS SECTION
+   ========================================= */
+
+.projects-section {
+  padding: 100px 8%;
+  border-top: 1px solid #202638;
+}
+
+
+/* Projects heading */
+.projects-section .section-heading {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+
+/* Small section label */
+.projects-section .section-heading p {
+  color: #7c5cff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+
+/* Main heading */
+.projects-section .section-heading h2 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+
+/* Project cards container */
+.projects-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+
+  /* One large card for now */
+  grid-template-columns: 1fr;
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+   ========================================= */
+
+.project-card {
+  padding: 35px;
+
+  background: #101624;
+
+  border: 1px solid #2d3548;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Card hover effect */
+.project-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #7c5cff;
+}
+
+
+/* Project type */
+.project-type {
+  color: #7c5cff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 12px;
+}
+
+
+/* Project title */
+.project-card h3 {
+  color: white;
+
+  font-size: 28px;
+
+  margin: 0 0 18px;
+}
+
+
+/* Project description */
+.project-description {
+  color: #aeb6c8;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  max-width: 850px;
+
+  margin-bottom: 25px;
+}
+
+
+/* Technology tags */
+.project-technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Individual technology tag */
+.project-technologies span {
+  padding: 8px 14px;
+
+  border: 1px solid #343d52;
+
+  border-radius: 20px;
+
+  color: #c1c8d6;
+
+  font-size: 13px;
+}
+
+
+/* Project button */
+.project-button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #7c5cff;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+/* Button hover */
+.project-button:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+  padding: 100px 8%;
+  border-top: 1px solid #202638;
+}
+
+
+/* Contact heading */
+.contact-section .section-heading {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+
+/* Small CONTACT label */
+.contact-section .section-heading p {
+  color: #7c5cff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+
+/* Main heading */
+.contact-section .section-heading h2 {
+  color: white;
+
+  font-size: 40px;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   CONTACT CONTENT
+   ========================================= */
+
+.contact-content {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* Contact introduction */
+.contact-text h3 {
+  color: white;
+
+  font-size: 26px;
+
+  margin-bottom: 15px;
+}
+
+
+.contact-text p {
+  color: #aeb6c8;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  max-width: 650px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   CONTACT LINKS
+   ========================================= */
+
+.contact-links {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-top: 45px;
+}
+
+
+/* Individual contact card */
+.contact-card {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 25px;
+
+  background: #101624;
+
+  border: 1px solid #2d3548;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+
+/* Contact card hover */
+.contact-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #7c5cff;
+}
+
+
+/* Contact type */
+.contact-label {
+  color: #7c5cff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* Contact value */
+.contact-value {
+  color: #c5cad6;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   RESUME BUTTON
+   ========================================= */
+
+.resume-button {
+  display: inline-block;
+
+  margin-top: 40px;
+
+  padding: 14px 25px;
+
+  background: #7c5cff;
+
+  color: white !important;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+/* Resume hover */
+.resume-button:hover {
+  transform: translateY(-3px);
+
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   MOBILE CONTACT LAYOUT
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================================
+   SMOOTH PAGE SCROLLING
+   ========================================= */
+
+/* Makes navigation to About, Skills, Projects
+   and Contact sections smooth instead of jumping */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =====================================================
+   MOBILE NAVIGATION
+   ===================================================== */
+
+/* Hamburger menu button */
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+
+  /* Keep logo and menu button on the same row */
+  .navbar {
+    position: relative;
+  }
+
+  /* Show hamburger button on mobile */
+  .menu-button {
+    display: block;
+  }
+
+  /* Hide navigation links by default */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+
+    /* Dark background */
+    background: #111827;
+
+    /* Border */
+    border: 1px solid #444;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Put menu above other content */
+    z-index: 1000;
+
+    /* Arrange links vertically */
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Show menu when hamburger is clicked */
+  .nav-links.menu-open {
+    display: flex;
+  }
+
+  /* Make links easier to tap */
+  .nav-links a {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* =====================================================
+   MOBILE NAVIGATION
+   ===================================================== */
+
+/* Hamburger menu button */
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+
+  /* Keep logo and menu button on the same row */
+  .navbar {
+    position: relative;
+  }
+
+  /* Show hamburger button on mobile */
+  .menu-button {
+    display: block;
+  }
+
+  /* Hide navigation links by default */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+
+    /* Dark background */
+    background: #111827;
+
+    /* Border */
+    border: 1px solid #444;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Put menu above other content */
+    z-index: 1000;
+
+    /* Arrange links vertically */
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Show menu when hamburger is clicked */
+  .nav-links.menu-open {
+    display: flex;
+  }
+
+  /* Make links easier to tap */
+  .nav-links a {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE - SKILLS SECTION
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Stack skill cards vertically on mobile */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+
+  /* Make each skill card fit the mobile screen */
+  .skill-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Keep the skill section inside the screen */
+  .skills {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+/* ==================================================
+   MOBILE HERO
+   Keeps the hero clean and readable on small screens.
+   ================================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding: 80px 20px 60px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Greeting */
+  .greeting {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  /* Main name */
+  .hero h1 {
+    font-size: 46px;
+    line-height: 1.08;
+    margin: 0 auto 22px;
+    word-break: normal;
+  }
+
+  /* Job title */
+  .hero h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+
+  /* Description */
+  .hero-description {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    box-sizing: border-box;
+  }
+
+  /* Hero buttons */
+  .hero-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Technology tags */
+  .tech-stack {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+  }
+
+  .tech-stack span {
+    font-size: 13px;
+  }
+}
+/* ==================================================
+   MODERN HERO BACKGROUND
+   Adds subtle depth without making the page flashy.
+   ================================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(124, 92, 255, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(80, 140, 255, 0.08),
+      transparent 35%
+    ),
+    #0b0f19;
+}
+
+/* Subtle decorative glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.08);
+  filter: blur(100px);
+  top: 10%;
+  right: -120px;
+  pointer-events: none;
+}
+
+/* Keep the actual content above the background effect */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+/* ==================================================
+   MODERN ABOUT SECTION
+   ================================================== */
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+.about-section::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.06);
+  filter: blur(100px);
+  left: -150px;
+  top: 20%;
+  pointer-events: none;
+}
+
+/* Keep About content above the glow */
+.about-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modern highlight cards */
+.about-section .highlight-card {
+  background: rgba(16, 22, 36, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124, 92, 255, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.about-section .highlight-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 92, 255, 0.6);
+  background: rgba(20, 27, 45, 0.9);
+}
+
+/* Highlight number/title */
+.about-section .highlight-card h3 {
+  background: linear-gradient(90deg, #ffffff, #9d8cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* ==================================================
+   MODERN SKILLS SECTION
+   ================================================== */
+
+.skills-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+.skills-section::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(80, 140, 255, 0.05);
+  filter: blur(110px);
+  right: -150px;
+  top: 30%;
+  pointer-events: none;
+}
+
+/* Keep skill content above the glow */
+.skills-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modern skill cards */
+.skills-section .skill-card {
+  background: rgba(16, 22, 36, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 53, 72, 0.8);
+  border-radius: 16px;
+  padding: 30px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.skills-section .skill-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 92, 255, 0.55);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Skill category heading */
+.skills-section .skill-card h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* Skill tags */
+.skills-section .skill-list span {
+  background: rgba(124, 92, 255, 0.06);
+  border: 1px solid rgba(124, 92, 255, 0.18);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Skill tag hover */
+.skills-section .skill-list span:hover {
+  background: rgba(124, 92, 255, 0.14);
+  border-color: rgba(124, 92, 255, 0.5);
+  color: #ffffff;
+}
+
+/* ==================================================
+   MODERN PROJECT CARDS
+   ================================================== */
+
+.projects-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+.projects-section::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.06);
+  filter: blur(110px);
+  right: -160px;
+  top: 15%;
+  pointer-events: none;
+}
+
+/* Keep project content above the glow */
+.projects-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Project card */
+.projects-section .project-card {
+  position: relative;
+  background: rgba(16, 22, 36, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 53, 72, 0.8);
+  border-radius: 18px;
+  padding: 35px;
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Small accent line at the top */
+.projects-section .project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #7c5cff,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.projects-section .project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 92, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.projects-section .project-card:hover::before {
+  opacity: 1;
+}
+
+/* Project type */
+.projects-section .project-type {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(124, 92, 255, 0.08);
+  border: 1px solid rgba(124, 92, 255, 0.2);
+}
+
+/* Technology tags */
+.projects-section .project-technologies span {
+  background: rgba(255, 255, 255, 0.02);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.projects-section .project-technologies span:hover {
+  background: rgba(124, 92, 255, 0.1);
+  border-color: rgba(124, 92, 255, 0.45);
+}
+
+/* ==================================================
+   MODERN CONTACT SECTION
+   ================================================== */
+
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+.contact-section::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.07);
+  filter: blur(110px);
+  left: -150px;
+  top: 25%;
+  pointer-events: none;
+}
+
+/* Keep contact content above the glow */
+.contact-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact cards */
+.contact-section .contact-card {
+  position: relative;
+  background: rgba(16, 22, 36, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 53, 72, 0.8);
+  border-radius: 14px;
+  padding: 20px 24px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Contact card hover */
+.contact-section .contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(124, 92, 255, 0.5);
+  background: rgba(20, 27, 45, 0.9);
+}
+
+/* Contact labels */
+.contact-section .contact-label {
+  color: #7c5cff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Contact values */
+.contact-section .contact-value {
+  color: #d5d9e3;
+  transition: color 0.25s ease;
+}
+
+/* Value hover */
+.contact-section .contact-card:hover .contact-value {
+  color: #ffffff;
+}
+
+/* Resume button */
+.contact-section .resume-button {
+  box-shadow: 0 10px 30px rgba(124, 92, 255, 0.15);
+}
+
+.contact-section .resume-button:hover {
+  box-shadow: 0 12px 35px rgba(124, 92, 255, 0.25);
+}
